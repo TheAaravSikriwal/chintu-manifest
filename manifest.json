@@ -1,12 +1,12 @@
 {
   "news": {
-    "text": "Chintu v0.1.27 is out @wearechintu reads everything you text.",
+    "text": "Chintu v0.1.28 is out @wearechintu reads everything you text.",
     "url": "https://instagram.com/wearechintu",
     "accent": "accent"
   },
   "update": {
-    "latestVersion": "0.1.27",
-    "url": "https://github.com/TheAaravSikriwal/chintu-releases/releases/tag/v0.1.27",
+    "latestVersion": "0.1.28",
+    "url": "https://github.com/TheAaravSikriwal/chintu-releases/releases/tag/v0.1.28",
     "notes": "patch release"
   }
 }

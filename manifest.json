@@ -1,12 +1,14 @@
 {
   "news": {
-    "text": "We're still figuring Chintu out !! If it helped, tell a friend; if it stumbled, tell us! @wearechintu reads everything you text!.",
+    "text": "Chintu v1.0.0 is out @wearechintu reads everything you text.",
     "url": "https://instagram.com/wearechintu",
     "accent": "accent"
   },
   "update": {
-    "latestVersion": "0.1.16",
-    "url": "https://github.com/TheAaravSikriwal/chintu-releases/releases/latest",
-    "notes": "Redesigned onboarding, improved setup flow"
+    "latestVersion": "1.0.0",
+    "url": "https://github.com/TheAaravSikriwal/chintu-releases/releases/tag/v1.0.0",
+    "notes": "major release",
+    "sha512": "l/WGqTKUcdgr/xP+Q9/bVRL4oxcpjd1tH02td2tWYXz/CGpYfih1MAJv2LiZdFMaHsLHaGbPhOrzuJbC6OeRZg==",
+    "size": 143010040
   }
 }

@@ -1,0 +1,26 @@
+# These two files are SIGNED BYTES. Ed25519 covers the exact byte sequence,
+# so any line-ending conversion — in either direction, at any point — breaks
+# verification for every client.
+#
+# That is not hypothetical. v1.0.0 shipped unverifiable: release.bat's `echo`
+# wrote CRLF, sign.cjs signed those 474 bytes, git stored LF under
+# core.autocrlf, and GitHub Pages served 460 bytes. electron.js's
+# fetchAndVerifyManifest() hit `if (!ok) return null` and discarded the WHOLE
+# manifest — no news, no update banner, and no hash anchor, which means the
+# release could not install. It had to be repaired by hand.
+#
+# `-text` (not `text eol=lf`) is deliberate: eol=lf still normalises on add,
+# which is a conversion. `-text` disables conversion in BOTH directions, so
+# the bytes signed are the bytes committed are the bytes served.
+#
+# core.autocrlf is `true` at system scope on the release machine, so without
+# this file the guarantee rests entirely on release.bat remembering to run its
+# LF normaliser before signing. That is incidental, not structural. This makes
+# it structural.
+manifest.json   -text
+manifest.sig    -text
+
+# Stale pre-S4 manifest (v0.1.16, no sha512, no matching .sig). Nothing reads
+# it — electron.js's MANIFEST_URL points at manifest.json — but pin it too so
+# it can never become a surprise diff during an unrelated commit.
+manifest-check.json -text

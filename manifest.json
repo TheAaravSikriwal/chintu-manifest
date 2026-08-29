@@ -1,14 +1,14 @@
 {
   "news": {
-    "text": "Chintu v1.0.4 is out @wearechintu reads everything you text.",
+    "text": "Chintu v1.0.5 is out @wearechintu reads everything you text.",
     "url": "https://instagram.com/wearechintu",
     "accent": "accent"
   },
   "update": {
-    "latestVersion": "1.0.4",
-    "url": "https://github.com/TheAaravSikriwal/chintu-releases/releases/tag/v1.0.4",
+    "latestVersion": "1.0.5",
+    "url": "https://github.com/TheAaravSikriwal/chintu-releases/releases/tag/v1.0.5",
     "notes": "patch release",
-    "sha512": "qpQy8Whv/7Bs4Vnhls2e7KXTlhzMlilMen2/jXQ3qHZYCLUEaW2DtcAMOYAm7AC+QaQthmnuWHkIV839AYtpyg==",
-    "size": 143015176
+    "sha512": "oaE1f6HWDLny8IlkiAKd8a7J1BICjm+w3NcayYeQ8cInxARHOYttO+WU1aMYdxNkAqOOCPBZ51ImdvqyUzSAXA==",
+    "size": 143015977
   }
 }
